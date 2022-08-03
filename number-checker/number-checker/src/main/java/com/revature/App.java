@@ -10,7 +10,7 @@ public class App
     {
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine();
-        int val = Integer.parseInt(input);
+        int val = (int)Integer.parseInt(input);
         if(val % 2 == 0)
         {
             System.out.println( "Even" );
