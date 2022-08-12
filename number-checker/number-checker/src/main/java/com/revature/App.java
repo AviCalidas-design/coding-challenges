@@ -10,9 +10,30 @@ public class App
     {
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine();
-        char first = input.charAt(0);
-        String cut = input.substring(1);
-        System.out.println((cut + first) + "ay");
+        char end = input.charAt(input.length()-1);
+        String[] realInput = input.substring(0,input.length()-1).split(" ");
+        if(Character.isLetterOrDigit(end))
+        {
+            realInput = input.substring(0,input.length()).split(" ");
+        }
+        String result = "";
+        for(int i = 0; i < realInput.length ; i++)
+        {
+            result += (pigLatin(realInput[i]) + " ");
+        }
+        if(!Character.isLetterOrDigit(end))
+        {
+            result += end;
+        }
+        for(int i = 0; i < input.length()-1; i++)
+        {
+            if(!(Character.isLetterOrDigit(input.charAt(i)) || input.charAt(i) == ' '))
+            {
+                System.out.println("Invalid input");
+                System.exit(0);
+            }
+        }
+        System.out.println(result);
         // int val = (int)Integer.parseInt(input);
         // if(val % 2 == 0)
         // {
@@ -38,5 +59,11 @@ public class App
         // {
         //     System.out.println( "Not prime" );
         // }
+    }
+    public static String pigLatin(String input)
+    {
+        char first = input.charAt(0);
+        String cut = input.substring(1);
+        return ((cut + first) + "ay");
     }
 }
