@@ -1,0 +1,133 @@
+body{
+	background-color: #000000;
+    color: #ffff00;
+	background-image: url(space.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+#list-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width : 400px;
+    margin-left : 500px;
+    padding : 25px;
+    margin-top : 150px;
+    border: 10px dotted greenyellow;
+	background-color: orangered;
+}
+a:link.linq {
+	background:    #8e00ff;
+	background:    -webkit-linear-gradient(#8e00ff, #cdb2ff);
+	background:    linear-gradient(#8e00ff, #cdb2ff);
+	border-radius: 5px;
+	color:         #00ffd9;
+	display:       inline-block;
+	padding:       8px 20px;
+	font:          normal 700 24px/1 "Calibri", sans-serif;
+	text-align:    center;
+	text-shadow:   1px 1px 0 #000;
+}
+.navbar-brand mb-0 h1
+{
+    border-color : greenyellow;
+    border-radius: 5px;
+    padding : 8px 20px;
+    color : aquamarine;
+}
+.container-fluid
+{
+    float: center;
+    border : 5px solid greenyellow;
+    padding : 10px;
+    color : pink;
+    background-color: green;
+}
+.frm input{
+    width: 100%;
+    margin-bottom: 5px;
+
+    padding: 6px;
+
+    border-radius: 4px;
+    border: none;
+}
+#message{
+    color: aquamarine;
+
+    display: none;
+}
+#action-list
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width : 400px;
+    margin-left : 100px;
+    padding : 25px;
+    margin-top : 50px;
+    border: 10px dotted greenyellow;
+	background-color: orangered;
+}
+.action-headers
+{
+    background:    blue;
+	background:    -webkit-linear-gradient(blue, green);
+	background:    linear-gradient(blue green);
+	border-radius: 5px;
+	color:         red;
+	display:       inline-block;
+	padding:       8px 20px;
+	font:          normal 700 24px/1 "Calibri", sans-serif;
+	text-align:    center;
+	text-shadow:   1px 1px 0 #000;
+}
+.action-elements
+{
+    margin-left : 20px;
+    color : aquamarine;
+    background-color: maroon;
+}
+#main-text
+{
+    position: absolute;
+    width : 750px;
+    margin-left : 600px;
+    padding : 25px;
+    margin-top : 50px;
+    border: 5px dashed brown;
+	background-color: beige;
+    color : indigo;
+    display : none;
+}
+table, th, td {
+    border:1px solid black;
+  }
+th
+{
+    text-align: center;
+}
+.approve
+{
+    background-color: green;
+}
+.deny
+{
+    background-color: red;
+}
+#rocket
+{
+    float : left;
+    position : absolute;
+    top : 150px;
+}
+#flipped
+{
+    float : right;
+    position : absolute;
+    top : 100px;
+    right : 0px;
+    transform : rotate(180deg);
+}

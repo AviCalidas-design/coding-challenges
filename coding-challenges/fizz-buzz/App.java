@@ -6,26 +6,26 @@ public class App
     }
     public static String fizzbuzz(int x)
     {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for(int i = 1; i < x+1 ; i++)
         {
             if(i % 3 == 0)
             {
-                result += "Fizz";
+                result.append("Fizz");
             }
             if(i % 5 == 0)
             {
-                result += "Buzz";
+                result.append("Buzz");
             }
             if(!(i%3 == 0 || i%5 == 0))
             {
-                result += i;
+                result.append(i);
             }
             if(i != x)
             {
-                result += ", ";
+                result.append(", ");
             }
         }
-        return result;
+        return result.toString();
     }
 }
