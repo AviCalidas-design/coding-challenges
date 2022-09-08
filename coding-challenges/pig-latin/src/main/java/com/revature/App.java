@@ -59,6 +59,7 @@ public class App
         // {
         //     System.out.println( "Not prime" );
         // }
+        scan.close();
     }
     public static String pigLatin(String input)
     {
